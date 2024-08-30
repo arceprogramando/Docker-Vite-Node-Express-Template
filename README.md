@@ -37,6 +37,27 @@ El proyecto utiliza Docker para contenerizar tanto el frontend como el backend. 
 - **`Frontend`**: http://localhost:5173
 - **`Backend`**: http://localhost:8080
 
+4. **Instalación de dependencias en entornos locales**
+
+   Aunque la aplicación esté ejecutándose correctamente en Docker, es importante instalar las dependencias en el entorno local para evitar problemas de compatibilidad o ejecución. Para hacerlo:
+
+   1. **Accede al directorio del frontend** y ejecuta el comando para instalar las dependencias:
+
+      ```bash
+      cd Frontend
+      npm install
+      ```
+
+   2. **Accede al directorio del backend** y ejecuta el comando para instalar las dependencias:
+
+      ```bash
+      cd Backend
+      npm install
+      ```
+
+   Esto asegura que tanto el frontend como el backend tengan las mismas dependencias instaladas que las que se encuentran en el contenedor Docker, evitando discrepancias entre el entorno local y el contenedor.
+
+
 ## Uso
 Este proyecto sirve como una plantilla rápida para iniciar futuros proyectos full stack. Puedes modificar y adaptar esta estructura según tus necesidades.
 
